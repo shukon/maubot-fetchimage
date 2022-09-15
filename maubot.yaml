@@ -1,0 +1,8 @@
+maubot: 0.1.0
+id: org.shukini.maubot.fetchimage
+version: 0.1.0
+license: MIT
+modules:
+  - fetchimage
+main_class: FetchImageBot
+database: false

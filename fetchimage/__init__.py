@@ -23,6 +23,6 @@ class FetchImageBot(Plugin):
             content = MediaMessageEventContent(url=uri, body=file_name,
                                                msgtype=MessageType.IMAGE,
                                                external_url=image_url)
-            await self.client.send_message(evt.room_id, content)
+            await evt.reply(content)
         else:
             await evt.reply(f"Fetching \"{image_url}\" failed: {resp.status} {await resp.text()}")

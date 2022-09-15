@@ -6,3 +6,5 @@ Usage:
 <code>
 !fetch-image https://example.org/some_image.jpg
 </code>
+
+![image](https://user-images.githubusercontent.com/9417378/190361203-c35e784a-e986-416f-b468-f9f7c07db845.png)

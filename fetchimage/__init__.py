@@ -1,13 +1,14 @@
-from maubot import Plugin, MessageEvent
-from maubot.handlers import command
-from mautrix.types import MessageType, MediaMessageEventContent
-
-from aiohttp.client_exceptions import ClientConnectorError
+from aiohttp.client_exceptions import ClientConnectorError, ClientSSLError
 import imghdr
 import io
 import random
 import string
+from typing import Optional
 import urllib.request
+
+from maubot import Plugin, MessageEvent
+from maubot.handlers import command
+from mautrix.types import MessageType, MediaMessageEventContent
 
 class FetchImageBot(Plugin):
     @command.new()
